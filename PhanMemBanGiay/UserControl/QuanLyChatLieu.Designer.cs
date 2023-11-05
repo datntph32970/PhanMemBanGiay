@@ -177,6 +177,7 @@
             Controls.Add(label1);
             Name = "QuanLyChatLieu";
             Size = new Size(1108, 648);
+            Load += QuanLyChatLieu_Load;
             ((System.ComponentModel.ISupportInitialize)dgvChatLieu).EndInit();
             ResumeLayout(false);
             PerformLayout();

@@ -50,24 +50,24 @@ public partial class DBContext : DbContext
     {
         modelBuilder.Entity<Chatlieu>(entity =>
         {
-            entity.HasKey(e => e.Machatlieu).HasName("PK__CHATLIEU__80F939F84DA9ACBC");
+            entity.HasKey(e => e.Machatlieu).HasName("PK__CHATLIEU__80F939F8CD8A216D");
         });
 
         modelBuilder.Entity<Chucvu>(entity =>
         {
-            entity.HasKey(e => e.Machucvu).HasName("PK__CHUCVU__9FA9FD6A765B5BA1");
+            entity.HasKey(e => e.Machucvu).HasName("PK__CHUCVU__9FA9FD6AE527E363");
         });
 
         modelBuilder.Entity<Giay>(entity =>
         {
-            entity.HasKey(e => e.Magiay).HasName("PK__GIAY__0C880C58CD5FD8D9");
+            entity.HasKey(e => e.Magiay).HasName("PK__GIAY__0C880C58E0550CAB");
 
             entity.HasOne(d => d.MathuonghieuNavigation).WithMany(p => p.Giays).HasConstraintName("FK__GIAY__MATHUONGHI__4F7CD00D");
         });
 
         modelBuilder.Entity<GiayChiTiet>(entity =>
         {
-            entity.HasKey(e => e.MaGiayChiTiet).HasName("PK__Giay_Chi__536615189484CB03");
+            entity.HasKey(e => e.MaGiayChiTiet).HasName("PK__Giay_Chi__5366151851BFC86D");
 
             entity.HasOne(d => d.MaChatLieuNavigation).WithMany(p => p.GiayChiTiets).HasConstraintName("FK__Giay_ChiT__MaCha__571DF1D5");
 
@@ -80,12 +80,12 @@ public partial class DBContext : DbContext
 
         modelBuilder.Entity<Hinhthucthanhtoan>(entity =>
         {
-            entity.HasKey(e => e.Mahinhthucthanhtoan).HasName("PK__HINHTHUC__C3B2561F437E4066");
+            entity.HasKey(e => e.Mahinhthucthanhtoan).HasName("PK__HINHTHUC__C3B2561FC1ADAB18");
         });
 
         modelBuilder.Entity<HoaDonChiTiet>(entity =>
         {
-            entity.HasKey(e => e.MaHoaDonChiTiet).HasName("PK__HoaDonCh__6C2FD0CEF32D03A4");
+            entity.HasKey(e => e.MaHoaDonChiTiet).HasName("PK__HoaDonCh__6C2FD0CEE6BA27B4");
 
             entity.HasOne(d => d.MaGiayNavigation).WithMany(p => p.HoaDonChiTiets).HasConstraintName("FK__HoaDonChi__MaGia__52593CB8");
 
@@ -94,7 +94,7 @@ public partial class DBContext : DbContext
 
         modelBuilder.Entity<Hoadon>(entity =>
         {
-            entity.HasKey(e => e.Mahoadon).HasName("PK__HOADON__A4999DF54C1B4A8D");
+            entity.HasKey(e => e.Mahoadon).HasName("PK__HOADON__A4999DF5175F9D8C");
 
             entity.HasOne(d => d.MahinhthucthanhtoanNavigation).WithMany(p => p.Hoadons).HasConstraintName("FK__HOADON__MAHINHTH__44FF419A");
 
@@ -107,34 +107,34 @@ public partial class DBContext : DbContext
 
         modelBuilder.Entity<Khachhang>(entity =>
         {
-            entity.HasKey(e => e.Makhachhang).HasName("PK__KHACHHAN__30035C2F5022AF93");
+            entity.HasKey(e => e.Makhachhang).HasName("PK__KHACHHAN__30035C2F55C560EB");
         });
 
         modelBuilder.Entity<Kichco>(entity =>
         {
-            entity.HasKey(e => e.Makichco).HasName("PK__KICHCO__7EDFFF293DEA6587");
+            entity.HasKey(e => e.Makichco).HasName("PK__KICHCO__7EDFFF290207918E");
         });
 
         modelBuilder.Entity<Mausac>(entity =>
         {
-            entity.HasKey(e => e.Mamausac).HasName("PK__MAUSAC__99E7A68FB84B4484");
+            entity.HasKey(e => e.Mamausac).HasName("PK__MAUSAC__99E7A68F5A97564B");
         });
 
         modelBuilder.Entity<Taikhoan>(entity =>
         {
-            entity.HasKey(e => e.Mataikhoan).HasName("PK__TAIKHOAN__2ED8B5178396BCA8");
+            entity.HasKey(e => e.Mataikhoan).HasName("PK__TAIKHOAN__2ED8B517B139BD2E");
 
             entity.HasOne(d => d.MachucvuNavigation).WithMany(p => p.Taikhoans).HasConstraintName("FK__TAIKHOAN__MACHUC__398D8EEE");
         });
 
         modelBuilder.Entity<Thuonghieu>(entity =>
         {
-            entity.HasKey(e => e.Mathuonghieu).HasName("PK__THUONGHI__B319F6381D1DCA3F");
+            entity.HasKey(e => e.Mathuonghieu).HasName("PK__THUONGHI__B319F638706DCA03");
         });
 
         modelBuilder.Entity<Uudai>(entity =>
         {
-            entity.HasKey(e => e.Mauudai).HasName("PK__UUDAI__3F58B4FDB2CFD130");
+            entity.HasKey(e => e.Mauudai).HasName("PK__UUDAI__3F58B4FDB497B367");
         });
 
         OnModelCreatingPartial(modelBuilder);

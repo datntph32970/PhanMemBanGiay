@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DAL.IRepositories
 {
-    public interface IGiayRepository
+    public interface IGiayService
     {
         public List<Giay_ChatLieu_MauSac_KichCo> GetAll(string? txtTimKiem,string? searchType);
         public Giay_ChatLieu_MauSac_KichCo GetByID(int id);

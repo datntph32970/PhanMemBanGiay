@@ -28,10 +28,6 @@ public partial class Hoadon
     [Column("TONGTIEN")]
     public double? Tongtien { get; set; }
 
-    [Column("DIACHI")]
-    [StringLength(100)]
-    public string? Diachi { get; set; }
-
     [Column("TRANGTHAI")]
     public bool? Trangthai { get; set; }
 
